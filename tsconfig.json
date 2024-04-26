@@ -1,0 +1,33 @@
+{
+	"compilerOptions": { /* Docs: [https://www.typescriptlang.org/tsconfig](https://www.typescriptlang.org/tsconfig) */
+		"target": "ES2022",
+		"module": "NodeNext",
+		"outDir": "bin",
+		"rootDir": "src",
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"moduleResolution": "NodeNext",
+		"types": [
+			"node",
+		],
+		"lib": [
+			"es6"
+		],
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowUnreachableCode": true,
+		"useUnknownInCatchVariables": false, // TypeScript 4.4+ only!
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.js"
+	],
+	"exclude": [
+		"node_modules",
+		"<node_internals>/**",
+	]
+}
